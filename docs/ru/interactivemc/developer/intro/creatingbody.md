@@ -35,7 +35,7 @@ public class MyTestBody extends VxBody implements IGrabbable {
 }
 ```
 
-Вы можете почитать подробнее о типах `IGrabbable`, `GrabPoint` и других классах InteractiveMC в [Javadoc InteractiveMC](https://timtaran.github.io/InteractiveMC/net/timtaran/interactivemc/body/type/package-summary.html)
+Вы можете почитать подробнее о типах `IGrabbable`, `GrabPoint` и других классах InteractiveMC в [Javadoc InteractiveMC](https://interactorsmc.github.io/InteractiveMC/net/timtaran/interactivemc/body/type/package-summary.html)
 
 ## Регистрация
 

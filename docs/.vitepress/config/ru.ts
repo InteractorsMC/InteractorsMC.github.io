@@ -3,14 +3,16 @@ import { version } from "./global";
 
 export const ru = defineConfig({
     lang: 'ru-RU',
-    description: 'Привносим физические взаимодействия в Vivecraft',
+    description: 'Официальная документация проектов InteractorsMC',
 
     themeConfig: {
         nav: nav(),
 
         sidebar: {
-            '/ru/player/': sidebarPlayer(),
-            '/ru/developer': sidebarDeveloper()
+            '/ru/interactivemc/player/': sidebarInteractiveMCPlayer(),
+            '/ru/interactivemc/developer/': sidebarInteractiveMCDeveloper(),
+            '/ru/interactivity/player/': sidebarInteractivityPlayer(),
+            '/ru/interactivity/developer/': sidebarInteractivityDeveloper(),
         },
 
         editLink: {
@@ -20,7 +22,7 @@ export const ru = defineConfig({
 
         footer: {
             message: 'NOT AN OFFICIAL MINECRAFT WEBSITE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT',
-            copyright: '© 2026 - Timtaran. Опубликовано под лицензией <a href = "https://github.com/Timtaran/interactivemc-docs/blob/master/LICENSE">Creative Commons</a>'
+            copyright: '© 2026 - InteractorsMC. Опубликовано под лицензией <a href = "https://github.com/Timtaran/interactivemc-docs/blob/master/LICENSE">Creative Commons</a>'
         },
 
         outline: { label: 'Содержание страницы' },
@@ -45,8 +47,20 @@ export const ru = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
     return [
-        { text: 'Игроки', link: 'ru/player/' },
-        { text: 'Разработчики', link: ' /ru/developer/' },
+        {
+            text: 'InteractiveMC',
+            items: [
+                { text: 'Игрокам', link: '/ru/interactivemc/player/' },
+                { text: 'Разработчикам', link: '/ru/interactivemc/developer/' },
+            ]
+        },
+        {
+            text: 'Interactivity',
+            items: [
+                { text: 'Игрокам', link: '/ru/interactivity/player/' },
+                { text: 'Разработчикам', link: '/ru/interactivity/developer/' },
+            ]
+        },
         {
             text: version,
             items: [
@@ -63,38 +77,58 @@ function nav(): DefaultTheme.NavItem[] {
     ]
 }
 
-function sidebarPlayer(): DefaultTheme.SidebarItem[] {
+function sidebarInteractiveMCPlayer(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Игроки',
+            text: 'InteractiveMC — Игроки',
             items: [
-                { text: 'Гайды для игроков', link: '/ru/player' },
-                { text: 'Установка', link: '/ru/player/install' },
-                { text: 'Конфигурация', link: '/ru/player/config' },
-
+                { text: 'Гайды для игроков', link: '/ru/interactivemc/player/' },
+                { text: 'Установка', link: '/ru/interactivemc/player/install' },
+                { text: 'Конфигурация', link: '/ru/interactivemc/player/config' },
             ]
         }
     ]
 }
 
 
-function sidebarDeveloper(): DefaultTheme.SidebarItem[] {
+function sidebarInteractiveMCDeveloper(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Разработчики',
+            text: 'InteractiveMC — Разработчики',
             items: [
-                { text: 'Гайды для разработчиков', link: '/ru/developer' },
+                { text: 'Гайды для разработчиков', link: '/ru/interactivemc/developer/' },
                 {
                     text: "Вступление", collapsed: false, items: [
-                        { text: 'Шаблон', link: '/ru/developer/intro/template' },
-                        { text: 'Добавление зависимости', link: '/ru/developer/intro/depend' },
-                        { text: 'Создание физического тела', link: '/ru/developer/intro/creatingbody' },
+                        { text: 'Шаблон', link: '/ru/interactivemc/developer/intro/template' },
+                        { text: 'Добавление зависимости', link: '/ru/interactivemc/developer/intro/depend' },
+                        { text: 'Создание физического тела', link: '/ru/interactivemc/developer/intro/creatingbody' },
                     ]
                 }
             ]
         }
     ]
+}
 
+function sidebarInteractivityPlayer(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: 'Interactivity — Игроки',
+            items: [
+                { text: 'Гайды для игроков', link: '/ru/interactivity/player/' },
+            ]
+        }
+    ]
+}
+
+function sidebarInteractivityDeveloper(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: 'Interactivity — Разработчики',
+            items: [
+                { text: 'Гайды для разработчиков', link: '/ru/interactivity/developer/' },
+            ]
+        }
+    ]
 }
 
 export const search: DefaultTheme.AlgoliaSearchOptions['locales'] = {

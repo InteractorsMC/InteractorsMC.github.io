@@ -3,8 +3,8 @@ import { search as ruSearch } from "./ru";
 
 // https://vitepress.dev/reference/site-config
 export const shared = defineConfig({
-  title: "InteractiveMC Docs",
-  description: "Bringing physical interactions to Vivecraft",
+  title: "InteractorsMC Wiki",
+  description: "Official documentation for InteractorsMC projects",
   cleanUrls: true,
 
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
@@ -18,7 +18,7 @@ export const shared = defineConfig({
   themeConfig: {
     socialLinks: [
       { icon: 'modrinth', link: 'https://modrinth.com/mod/InteractiveMC' },
-      { icon: 'github', link: 'https://github.com/Timtaran/InteractiveMC' }
+      { icon: 'github', link: 'https://github.com/InteractorsMC' }
     ],
 
     search: {

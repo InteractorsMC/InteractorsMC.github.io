@@ -3,14 +3,16 @@ import { version } from "./global";
 
 export const en = defineConfig({
     lang: 'en-US',
-    description: 'Bringing physical interactions in Vivecraft',
+    description: 'Official documentation for InteractorsMC projects',
 
     themeConfig: {
         nav: nav(),
 
         sidebar: {
-            '/player/': sidebarPlayer(),
-            '/developer/': sidebarDeveloper()
+            '/interactivemc/player/': sidebarInteractiveMCPlayer(),
+            '/interactivemc/developer/': sidebarInteractiveMCDeveloper(),
+            '/interactivity/player/': sidebarInteractivityPlayer(),
+            '/interactivity/developer/': sidebarInteractivityDeveloper(),
         },
 
         editLink: {
@@ -20,15 +22,27 @@ export const en = defineConfig({
 
         footer: {
             message: 'NOT AN OFFICIAL MINECRAFT WEBSITE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT',
-            copyright: '© 2026 - Timtaran. Published under <a href = "https://github.com/Timtaran/interactivemc-docs/blob/master/LICENSE">Creative Commons</a> license'
+            copyright: '© 2026 - InteractorsMC. Published under <a href = "https://github.com/Timtaran/interactivemc-docs/blob/master/LICENSE">Creative Commons</a> license'
         }
     }
 })
 
 function nav(): DefaultTheme.NavItem[] {
     return [
-        { text: 'Players', link: '/player/' },
-        { text: 'Developers', link: '/developer/' },
+        {
+            text: 'InteractiveMC',
+            items: [
+                { text: 'Player guides', link: '/interactivemc/player/' },
+                { text: 'Developer guides', link: '/interactivemc/developer/' },
+            ]
+        },
+        {
+            text: 'Interactivity',
+            items: [
+                { text: 'Player guides', link: '/interactivity/player/' },
+                { text: 'Developer guides', link: '/interactivity/developer/' },
+            ]
+        },
         {
             text: version,
             items: [
@@ -45,32 +59,54 @@ function nav(): DefaultTheme.NavItem[] {
     ]
 }
 
-function sidebarPlayer(): DefaultTheme.SidebarItem[] {
+function sidebarInteractiveMCPlayer(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Players',
+            text: 'InteractiveMC — Players',
             items: [
-                { text: 'Player guides', link: '/player' },
-                { text: 'Installation', link: '/player/install' },
-                { text: 'Configuration', link: '/player/config' },
+                { text: 'Player guides', link: '/interactivemc/player/' },
+                { text: 'Installation', link: '/interactivemc/player/install' },
+                { text: 'Configuration', link: '/interactivemc/player/config' },
             ]
         }
     ]
 }
 
-function sidebarDeveloper(): DefaultTheme.SidebarItem[] {
+function sidebarInteractiveMCDeveloper(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Developers',
+            text: 'InteractiveMC — Developers',
             items: [
-                { text: 'Developer guides', link: '/developer' },
+                { text: 'Developer guides', link: '/interactivemc/developer/' },
                 {
                     text: 'Introduction', collapsed: false, items: [
-                        { text: 'Template', link: '/developer/intro/template' },
-                        { text: 'Add a dependency', link: '/developer/intro/depend' },
-                        { text: 'Create a physical body', link: '/developer/intro/creatingbody' },
+                        { text: 'Template', link: '/interactivemc/developer/intro/template' },
+                        { text: 'Add a dependency', link: '/interactivemc/developer/intro/depend' },
+                        { text: 'Create a physical body', link: '/interactivemc/developer/intro/creatingbody' },
                     ]
                 }
+            ]
+        }
+    ]
+}
+
+function sidebarInteractivityPlayer(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: 'Interactivity — Players',
+            items: [
+                { text: 'Player guides', link: '/interactivity/player/' },
+            ]
+        }
+    ]
+}
+
+function sidebarInteractivityDeveloper(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: 'Interactivity — Developers',
+            items: [
+                { text: 'Developer guides', link: '/interactivity/developer/' },
             ]
         }
     ]

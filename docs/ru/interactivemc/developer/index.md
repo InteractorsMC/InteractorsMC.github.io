@@ -4,4 +4,4 @@
 
 Воспользуйтесь боковой панелью для навигации по гайдам.
 
-Вы можете изучить Javadoc мода тут: https://timtaran.github.io/InteractiveMC/
+Вы можете изучить Javadoc мода тут: https://interactorsmc.github.io/InteractiveMC/

@@ -3,21 +3,31 @@
 layout: home
 
 hero:
-  name: "Документация InteractiveMC"
-  tagline: Официальная документация для игроков и разработчиков
+  name: "Вики InteractorsMC"
+  tagline: Официальная документация проектов InteractorsMC
   image:
     src: https://raw.githubusercontent.com/Timtaran/InteractiveMC/refs/heads/master/assets/logo.png
-    alt: InteractiveMC Logo
+    alt: InteractorsMC Logo
 
 features:
-  - title: Гайды для игроков
+  - title: InteractiveMC — Игроки
     icon: 📚
-    details: Вы игрок и хотите найти инструкции по установке и настройке мода?
-    link: /ru/player/
-    linkText: Начать
-  - title: Гайды для разработчиков
+    details: Инструкции по установке и настройке мода InteractiveMC.
+    link: /ru/interactivemc/player/
+    linkText: Вики для игроков
+  - title: InteractiveMC — Разработчики
     icon: 🛠️
-    details: Вы разработчик и хотите узнать как добавлять физические интеракции в свои моды?
-    link: /ru/developer/
-    linkText: Начать
+    details: Узнайте, как добавлять физические интеракции в свои моды с помощью InteractiveMC.
+    link: /ru/interactivemc/developer/
+    linkText: Вики для разработчиков
+  - title: Interactivity — Игроки
+    icon: 🎮
+    details: Руководства по установке и настройке Interactivity для игроков.
+    link: /ru/interactivity/player/
+    linkText: Вики для игроков
+  - title: Interactivity — Разработчики
+    icon: ⚙️
+    details: Документация для разработчиков и руководства по API Interactivity.
+    link: /ru/interactivity/developer/
+    linkText: Вики для разработчиков
 ---
