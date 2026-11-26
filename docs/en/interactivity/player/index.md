@@ -1,4 +1,4 @@
-# Interactivity — Player Guides
+# Player Guides
 
 Welcome to the player documentation for **Interactivity**.
 

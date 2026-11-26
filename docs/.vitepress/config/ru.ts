@@ -80,7 +80,7 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarInteractiveMCPlayer(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'InteractiveMC — Игроки',
+            text: 'InteractiveMC: Игроки',
             items: [
                 { text: 'Гайды для игроков', link: '/ru/interactivemc/player/' },
                 { text: 'Установка', link: '/ru/interactivemc/player/install' },
@@ -94,7 +94,7 @@ function sidebarInteractiveMCPlayer(): DefaultTheme.SidebarItem[] {
 function sidebarInteractiveMCDeveloper(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'InteractiveMC — Разработчики',
+            text: 'InteractiveMC: Разработчики',
             items: [
                 { text: 'Гайды для разработчиков', link: '/ru/interactivemc/developer/' },
                 {
@@ -112,7 +112,7 @@ function sidebarInteractiveMCDeveloper(): DefaultTheme.SidebarItem[] {
 function sidebarInteractivityPlayer(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Interactivity — Игроки',
+            text: 'Interactivity: Игроки',
             items: [
                 { text: 'Гайды для игроков', link: '/ru/interactivity/player/' },
             ]
@@ -123,7 +123,7 @@ function sidebarInteractivityPlayer(): DefaultTheme.SidebarItem[] {
 function sidebarInteractivityDeveloper(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Interactivity — Разработчики',
+            text: 'Interactivity: Разработчики',
             items: [
                 { text: 'Гайды для разработчиков', link: '/ru/interactivity/developer/' },
             ]

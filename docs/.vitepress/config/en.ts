@@ -62,7 +62,7 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarInteractiveMCPlayer(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'InteractiveMC — Players',
+            text: 'InteractiveMC: Players',
             items: [
                 { text: 'Player guides', link: '/interactivemc/player/' },
                 { text: 'Installation', link: '/interactivemc/player/install' },
@@ -75,7 +75,7 @@ function sidebarInteractiveMCPlayer(): DefaultTheme.SidebarItem[] {
 function sidebarInteractiveMCDeveloper(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'InteractiveMC — Developers',
+            text: 'InteractiveMC: Developers',
             items: [
                 { text: 'Developer guides', link: '/interactivemc/developer/' },
                 {
@@ -93,7 +93,7 @@ function sidebarInteractiveMCDeveloper(): DefaultTheme.SidebarItem[] {
 function sidebarInteractivityPlayer(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Interactivity — Players',
+            text: 'Interactivity: Players',
             items: [
                 { text: 'Player guides', link: '/interactivity/player/' },
             ]
@@ -104,7 +104,7 @@ function sidebarInteractivityPlayer(): DefaultTheme.SidebarItem[] {
 function sidebarInteractivityDeveloper(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Interactivity — Developers',
+            text: 'Interactivity: Developers',
             items: [
                 { text: 'Developer guides', link: '/interactivity/developer/' },
             ]
